@@ -1,8 +1,8 @@
 {
-	"name": "microphork/package-auth",
-	"description": "An authentication package for the microphork framework",
-	"type": "microphork-package",
-	"require": {
-		"microphork/package-installer": "*"
-	}
+    "name": "microphork/package-auth",
+    "description": "An authentication package for the microphork framework",
+    "type": "microphork-package",
+    "require": {
+        "microphork/package-installer": "*"
+    }
 }

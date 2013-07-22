@@ -14,10 +14,10 @@ This is an authentication package for the microphork framework. The authenticati
 ```
 //load and initialize a new auth package
 $auth = \Phork::instance()->initPackage('auth', (
-	function($result, $type) {
-		$class = sprintf('\\Phork\\%s\\Auth', ucfirst($type));
-		return new $class();	
-	}
+    function($result, $type) {
+        $class = sprintf('\\Phork\\%s\\Auth', ucfirst($type));
+        return new $class();
+    }
 ));
 
 //get the loaded config
@@ -25,14 +25,14 @@ $config = \Phork::config()->get('auth');
 
 //initialize the auth handler
 if ($config->handlers && $handlers = $config->handlers->export()) {
-	$auth->init($handlers);
+    $auth->init($handlers);
 }
 
 //show the user data
 \Phork::output()
-	->addContent('authenticated: '.$auth->isAuthenticated().'<br />')
-	->addContent('user id: '.$auth->getUserId().'<br />')
-	->addContent('user name: '.$auth->getUserName().'<br />')
+    ->addContent('authenticated: '.$auth->isAuthenticated().'<br />')
+    ->addContent('user id: '.$auth->getUserId().'<br />')
+    ->addContent('user name: '.$auth->getUserName().'<br />')
 ;
 ```
 
