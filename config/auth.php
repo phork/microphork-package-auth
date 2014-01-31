@@ -3,7 +3,7 @@
         'auth'              => array(
             'handlers'          => array(
                 'spoofed'           => array(
-                    'active'            => true,
+                    'active'            => false,
                     'class'             => '\Phork\Pkg\Auth\Spoofed',
                     'params'            => array(
                         'userid'            => 1,
