@@ -23,6 +23,6 @@
         public function getUserId();
         public function getUserName();
         
-        public function isTokenValid();
+        public function isTokenValid($token);
         public function getToken();
     }
