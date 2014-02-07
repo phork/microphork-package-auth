@@ -6,7 +6,7 @@
      * This is a singleton.
      *
      * <code>
-     *   $auth = Auth();
+     *   $auth = new Auth();
      *   $auth->addHandler('database', new Auth\Database());
      *   $auth->isAuthenticated();
      * </code>
