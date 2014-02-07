@@ -8,7 +8,8 @@
                     'params'            => array(
                         'userid'            => 1,
                         'username'          => 'phork',
-                        'authenticated'     => true
+                        'authenticated'     => true,
+                        'token'             => 'abc123'
                     )
                 )
             )

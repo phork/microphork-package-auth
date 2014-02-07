@@ -5,6 +5,11 @@
      * Spoofs the user authentication with hard coded data. This should
      * be used as a handler for the Auth class.
      *
+     * The token validation can be used as an addition validation method
+     * after the user has been authenticated to help prevent XSS attacks.
+     * This hardcodes a single token but tokens can also be generated for
+     * single use.
+     *
      * @author Elenor Collings <elenor@phork.org>
      * @package phork
      * @subpackage auth
@@ -14,6 +19,7 @@
         protected $authenticated;
         protected $userid;
         protected $username;
+        protected $token;
         
     
         /**
@@ -104,5 +110,31 @@
         public function getUserName() 
         {
             return $this->username;
+        }
+        
+        
+        /**
+         * Returns whether or not the token is valid.
+         *
+         * @access public
+         * @param string $token The token to validate
+         * @return boolean True if valid
+         */
+        public function isTokenValid($token)
+        {
+            return $token == $this->token;
+        }
+        
+        
+        /**
+         * Returns a token that can used to further validate 
+         * the user.
+         *
+         * @access public
+         * @return string The token
+         */
+        public function getToken()
+        {
+            return $this->token;
         }
     }
