@@ -15,7 +15,7 @@
      * @package phork
      * @subpackage auth
      */
-    class Auth extends \Phork\Core\Dispatcher 
+    class Auth extends \Phork\Core\Dispatcher
     {
         protected $instanceOf = '\\Phork\\Pkg\\Auth\\Interfaces\\Handler';
         
