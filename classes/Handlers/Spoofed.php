@@ -29,9 +29,9 @@
          * @param array $params An array of params to set for each property
          * @return void
          */
-        public function __construct($params = array()) 
+        public function __construct($params = array())
         {
-            foreach ($params as $key=>$value) {
+            foreach ($params as $key => $value) {
                 if (property_exists($this, $key)) {
                     $this->$key = $value;
                 }
@@ -47,7 +47,7 @@
          * @param string $password The associated password
          * @return boolean True if authenticated successfully
          */
-        public function standardAuth($username, $password) 
+        public function standardAuth($username, $password)
         {
             return true;
         }
@@ -59,7 +59,7 @@
          * @access public
          * @return boolean True if authenticated successfully
          */
-        public function cookieAuth() 
+        public function cookieAuth()
         {
             return true;
         }
@@ -71,7 +71,7 @@
          * @access public
          * @return boolean True if logged out successfully
          */
-        public function logout() 
+        public function logout()
         {
             return true;
         }
@@ -83,7 +83,7 @@
          * @access public
          * @return boolean True if authenticated
          */
-        public function isAuthenticated() 
+        public function isAuthenticated()
         {
             return $this->authenticated;
         }
@@ -95,7 +95,7 @@
          * @access public
          * @return integer The user ID
          */
-        public function getUserId() 
+        public function getUserId()
         {
             return $this->userid;
         }
@@ -107,7 +107,7 @@
          * @access public
          * @return string The username
          */
-        public function getUserName() 
+        public function getUserName()
         {
             return $this->username;
         }

@@ -10,7 +10,7 @@
      * @package phork
      * @subpackage auth
      */
-    interface HandlerInterface 
+    interface HandlerInterface
     {
         public function __construct($params = array());
         

@@ -6,7 +6,7 @@
      * This is a singleton.
      *
      * <code>
-     *   $auth = Auth();
+     *   $auth = new Auth();
      *   $auth->addHandler('database', new Auth\Database());
      *   $auth->isAuthenticated();
      * </code>
@@ -15,7 +15,7 @@
      * @package phork
      * @subpackage auth
      */
-    class Auth extends \Phork\Core\Dispatcher 
+    class Auth extends \Phork\Core\Dispatcher
     {
         protected $instanceOf = '\\Phork\\Pkg\\Auth\\Handlers\\HandlerInterface';
         
