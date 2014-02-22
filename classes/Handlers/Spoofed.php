@@ -1,5 +1,5 @@
 <?php
-    namespace Phork\Pkg\Auth;
+    namespace Phork\Pkg\Auth\Handlers;
     
     /**
      * Spoofs the user authentication with hard coded data. This should
@@ -14,7 +14,7 @@
      * @package phork
      * @subpackage auth
      */
-    class Spoofed implements Interfaces\Handler 
+    class Spoofed implements HandlerInterface
     {
         protected $authenticated;
         protected $userid;

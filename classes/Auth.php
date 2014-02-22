@@ -17,7 +17,7 @@
      */
     class Auth extends \Phork\Core\Dispatcher 
     {
-        protected $instanceOf = '\\Phork\\Pkg\\Auth\\Interfaces\\Handler';
+        protected $instanceOf = '\\Phork\\Pkg\\Auth\\Handlers\\HandlerInterface';
         
         protected $minimum = 1;
         protected $maximum = 1;

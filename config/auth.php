@@ -4,7 +4,7 @@
             'handlers'          => array(
                 'spoofed'           => array(
                     'active'            => false,
-                    'class'             => '\Phork\Pkg\Auth\Spoofed',
+                    'class'             => '\Phork\Pkg\Auth\Handlers\Spoofed',
                     'params'            => array(
                         'userid'            => 1,
                         'username'          => 'phork',

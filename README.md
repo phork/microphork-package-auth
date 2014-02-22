@@ -15,7 +15,7 @@ This is an authentication package for the microphork framework. The authenticati
 //load and initialize a new auth package
 $auth = \Phork::instance()->initPackage('auth', (
     function($result, $type) {
-        $class = sprintf('\\Phork\\%s\\Auth', ucfirst($type));
+        $class = sprintf('\\Phork\\%s\\Auth', $type);
         return new $class();
     }
 ));

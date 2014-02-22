@@ -1,5 +1,5 @@
 <?php
-    namespace Phork\Pkg\Auth\Interfaces;
+    namespace Phork\Pkg\Auth\Handlers;
     
     /**
      * The auth handler interface makes sure each auth handler has
@@ -10,7 +10,7 @@
      * @package phork
      * @subpackage auth
      */
-    interface Handler 
+    interface HandlerInterface 
     {
         public function __construct($params = array());
         
