@@ -4,5 +4,10 @@
     "type": "microphork-package",
     "require": {
         "microphork/package-installer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+	        "Phork\\Pkg\\Auth\\": "classes"
+        }
     }
 }
