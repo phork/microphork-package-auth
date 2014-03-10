@@ -1,5 +1,5 @@
 <?php
-    namespace Phork\Pkg;
+    namespace Phork\Pkg\Auth;
     
     /**
      * Loads an authentication system and delegates processing to it.
