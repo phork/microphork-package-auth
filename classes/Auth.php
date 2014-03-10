@@ -12,8 +12,7 @@
      * </code>
      *
      * @author Elenor Collings <elenor@phork.org>
-     * @package phork
-     * @subpackage auth
+     * @package \Phork\Pkg\Auth
      */
     class Auth extends \Phork\Core\Dispatcher
     {
