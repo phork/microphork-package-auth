@@ -13,12 +13,8 @@ This is an authentication package for the microphork framework. The authenticati
 
 ```
 //load and initialize a new auth package
-$auth = \Phork::instance()->initPackage('Auth', (
-    function($result, $type) {
-        $class = sprintf('\\Phork\\%s\\Auth\\Auth', $type);
-        return new $class();
-    }
-));
+$class = \Phork::instance()->initPackage('Auth');
+$auth = new $class();
 
 //get the loaded config
 $config = \Phork::config()->get('auth');
