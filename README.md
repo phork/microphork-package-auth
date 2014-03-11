@@ -8,6 +8,8 @@
 
 This is an authentication package for the microphork framework. The authentication class is a dispatcher. Currently the only available handler spoofs the user data.
 
+To extend this package create a `\Phork\App\Debug` class in the `app/classes` folder.
+
 
 ##Usage
 
