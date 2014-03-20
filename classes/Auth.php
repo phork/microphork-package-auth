@@ -7,7 +7,7 @@
      *
      * <code>
      *   $auth = new Auth();
-     *   $auth->addHandler('database', new Auth\Database());
+     *   $auth->addHandler('database', new Handlers\Spoofed());
      *   $auth->isAuthenticated();
      * </code>
      *
