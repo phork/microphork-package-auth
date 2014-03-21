@@ -1,14 +1,8 @@
-#microphork
-
-* [By Phork Labs](http://phorklabs.com/)
-* Version: 0.1
-
-
 ##Introduction
 
 This is an authentication package for the microphork framework. The authentication class is a dispatcher. Currently the only available handler spoofs the user data.
 
-To extend this package create a `\Phork\App\Auth` class in the `app/classes` folder.
+To extend this package create a `\Phork\App\Auth` class in the `app/classes` folder and an `app/config/auth.php` file to define the active handler.
 
 
 ##Usage
@@ -33,6 +27,11 @@ if ($config->handlers && $handlers = $config->handlers->export()) {
     ->addContent('user name: '.$auth->getUserName().'<br />')
 ;
 ```
+
+
+##Credits
+
+Built by [Elenor](http://elenor.net) at [Phork Labs](http://phorklabs.com).
 
 
 ##License
