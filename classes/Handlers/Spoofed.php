@@ -37,7 +37,6 @@
             }
         }
         
-        
         /**
          * Authenticates the user by username and password.
          *
@@ -51,7 +50,6 @@
             return true;
         }
         
-        
         /**
          * Authenticates the user by cookie.
          *
@@ -62,7 +60,6 @@
         {
             return true;
         }
-        
         
         /**
          * Logs out a user and clears all the cookies.
@@ -75,7 +72,6 @@
             return true;
         }
         
-        
         /**
          * Returns whether or not the user is authenticated.
          *
@@ -86,7 +82,6 @@
         {
             return $this->authenticated;
         }
-        
         
         /**
          * Returns the user's ID.
@@ -99,7 +94,6 @@
             return $this->userid;
         }
         
-        
         /**
          * Returns the user's username.
          *
@@ -110,7 +104,6 @@
         {
             return $this->username;
         }
-        
         
         /**
          * Returns whether or not the token is valid.
@@ -123,7 +116,6 @@
         {
             return $token == $this->token;
         }
-        
         
         /**
          * Returns a token that can used to further validate 
